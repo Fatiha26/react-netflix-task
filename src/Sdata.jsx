@@ -17,6 +17,12 @@ const Sdata = [
         sname:"Hello",
         link:"https://www.netflix.com",
        },
+       {
+        imgsrc:"https://picsum.photos/250/250" ,
+        title:"A netflix original series",
+        sname:"Boom",
+        link:"https://www.netflix.com",
+       },
 
 ]
 
