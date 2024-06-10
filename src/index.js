@@ -1,17 +1,27 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+import Card from './Card';
+
+ReactDOM.render(
+  <>
+      <Card imgsrc="https://picsum.photos/200/300" 
+          title="A netflix original series"
+          sname="Dark"
+          link="https://www.netflix.com"
+      />
+      
+      <Card imgsrc="https://picsum.photos/300/300" 
+          title="A netflix original series"
+          sname="Stranger Things"
+          link="https://www.netflix.com" />
+              
+      <Card imgsrc="https://picsum.photos/250/300" 
+          title="A netflix original series"
+          sname="Boom"
+          link="https://www.netflix.com" />
+
+  </>
+  ,document.getElementById('root')
+
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
