@@ -6,23 +6,26 @@ import Card from './Card';
 import Sdata from './Sdata';
 
 
-function ncard(val){
-    return(
-        <Card imgsrc= {val.imgsrc}
-        title={val.title}
-        sname={val.sname}
-        link={val.link}
-    />
-    );
-}
-
 
 ReactDOM.render(
   <>
       <h1 className='heading_style'>List of top Netflix Series</h1>     
         
-      {Sdata.map(ncard)}
+      {Sdata.map((val) => {
+        return(
+        <Card 
+           imgsrc= {val.imgsrc}
+           title={val.title}
+           sname={val.sname}
+           link={val.link}
+        />
+    );
+      })}
   </>
   ,document.getElementById('root')
 
 );
+
+
+//const myname = (a,b) => a+b;
+//fat arrow function
